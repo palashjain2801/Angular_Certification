@@ -3,10 +3,40 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { ForgetPasswordComponent } from './auth/forget-password/forget-password.component';
+import { HeaderLoginComponent } from './auth/header-login/header-login.component';
+import { HeaderMainComponent } from './MainScreen/header-main/header-main.component';
+import { HomeComponent } from './MainScreen/home/home.component';
+import { ListFoodComponent } from './MainScreen/list-food/list-food.component';
+import { UserSettingComponent } from './Setting/user-setting/user-setting.component';
+import { ListCardComponent } from './Setting/list-card/list-card.component';
+import { ListAddressComponent } from './Setting/list-address/list-address.component';
+import { AddAddressComponent } from './Setting/add-address/add-address.component';
+import { EditAddressComponent } from './Setting/edit-address/edit-address.component';
+import { ProfileComponent } from './Profile/profile/profile.component';
+import { ListCartComponent } from './Cart/list-cart/list-cart.component';
+import { OrderDetailsComponent } from './Order/order-details/order-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgetPasswordComponent,
+    HeaderLoginComponent,
+    HeaderMainComponent,
+    HomeComponent,
+    ListFoodComponent,
+    UserSettingComponent,
+    ListCardComponent,
+    ListAddressComponent,
+    AddAddressComponent,
+    EditAddressComponent,
+    ProfileComponent,
+    ListCartComponent,
+    OrderDetailsComponent
   ],
   imports: [
     BrowserModule,
