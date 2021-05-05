@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormsModule  } from '@angular/forms';
 import { UserService } from 'src/app/service/user.service';
+import { Register } from './register';
 
 
 @Component({
@@ -11,8 +12,7 @@ import { UserService } from 'src/app/service/user.service';
 export class RegisterComponent implements OnInit {
   registerForm!: FormGroup;
 
-
-  constructor(private formBuilder: FormBuilder, private _userService:UserService) { }
+  constructor(private formBuilder: FormBuilder, public _userService:UserService) { }
   ngOnInit() {
       this.registerForm = this.formBuilder.group({
       title: [''],
@@ -20,7 +20,8 @@ export class RegisterComponent implements OnInit {
       email: [''],
       password: [''],
       confirmPassword: [''],
-      acceptTerms: [false]
+      acceptTerms: [false],
+      id:['']
     });
   }
   onSubmit(){
@@ -33,6 +34,10 @@ export class RegisterComponent implements OnInit {
 
   onReset() {
     this.registerForm.reset();
+  }
+  createUser(user:Register){
+    console.log("updating USer details ", user)
+    this._userService.setUserInfo(user)
   }
 
 }

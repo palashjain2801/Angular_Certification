@@ -1,9 +1,28 @@
 {
-    "User":[
-        {"id":1,
-        "Name":"Palash",
-        "Email":"palash@gmail.com",
-        "Password":"1203s"
+  "User": [
+    {
+      "id": 1,
+      "Name": "Palash",
+      "Email": "palash@gmail.com",
+      "Password": "1203s"
+    },
+    {
+      "title": "",
+      "Name": "tesing",
+      "email": "testing@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "acceptTerms": false,
+      "id": 2
+    },
+    {
+      "title": "",
+      "Name": "",
+      "email": "palashjain2893@gmail.com",
+      "password": "Rjps6Vz2HRVGExL",
+      "confirmPassword": "",
+      "acceptTerms": false,
+      "id": 3
     }
-    ]
+  ]
 }
