@@ -18,6 +18,13 @@ import { EditAddressComponent } from './Setting/edit-address/edit-address.compon
 import { ProfileComponent } from './Profile/profile/profile.component';
 import { ListCartComponent } from './Cart/list-cart/list-cart.component';
 import { OrderDetailsComponent } from './Order/order-details/order-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './service/user.service';
+import { FoodService } from './service/food.service';
+import { OrderService } from './service/order.service';
+import { SettingService } from './service/setting.service';
+
 
 @NgModule({
   declarations: [
@@ -40,9 +47,12 @@ import { OrderDetailsComponent } from './Order/order-details/order-details.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService,FoodService,OrderService,SettingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
