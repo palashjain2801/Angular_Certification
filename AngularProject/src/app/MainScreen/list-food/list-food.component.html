@@ -1,1 +1,51 @@
-<p>list-food works!</p>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-8 justify-content-center p-3">
+            <!-- Search form -->
+            <input class="form-control" type="text" placeholder="Search Food Items" aria-label="Search">
+        </div>
+    </div>
+
+    <div class='row mt-5'>
+        <div 
+            appColor
+            class="col-sm-12 col-md-6 col-lg-3" 
+            *ngFor='let product of allFood'>
+            <div class="card">              
+                <img class="card-img-top"
+                    [src]="product.foodImageUrl"
+                    alt="image" width="200" height="180"/>
+            
+                <div class="card-body">
+                    <div class="row d-flex justify-content-between">
+                        <div class="">{{ product.restaurantName }}</div>
+                    </div>
+                    <div class="row d-flex justify-content-between">
+                        <div class="small text-muted">{{ product.foodDescription }} || Rating: {{product.foodRating}} || {{product.foodCost}} ₹</div><br>
+                    </div>
+                    <div class="mt-1 row d-flex flex-row justify-content-between">
+                        <div class="small text-muted">
+                           {{ product.foodName }}
+                        </div>
+                    </div>
+                    <div class="mt-1 row d-flex flex-row justify-content-between">
+                        <div class="small">
+                            <button 
+                                type='button' 
+                                class="btn btn-primary btn-sm mt-2"
+                                (click)='addToCart(product)'>
+                                Add to Cart
+                            </button>&nbsp;
+                            <button 
+                                type='button' 
+                                class="btn btn-primary btn-sm mt-2">
+                                <!-- (click)='editProduct(product.id)' -->
+                                Buy/Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
