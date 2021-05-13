@@ -1,0 +1,97 @@
+{
+    "cart":[
+        {
+            "id": 101,
+            "foodImageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=924&q=80",
+            "restaurantName": "Balaji Dhaba",
+            "foodDescription": "Paneer tomato gravy",
+            "foodName": "Paneer butter masala",
+            "foodCost": 100,
+            "foodRating": 4.8
+          } 
+    ],
+
+    "foods": [
+        {
+            "id": 101,
+            "foodImageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=924&q=80",
+            "restaurantName": "Balaji Dhaba",
+            "foodDescription": "Paneer tomato gravy",
+            "foodName": "Paneer butter masala",
+            "foodCost": 100,
+            "foodRating": 4.8
+          },
+          {
+            "id": 102,
+            "foodImageUrl": "https://images.unsplash.com/photo-1552590635-27c2c2128abf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80",
+            "restaurantName": "Santosh Dhaba",
+            "foodDescription": "Vegatables in rice",
+            "foodName": "Biryani",
+            "foodCost": 200,
+            "foodRating": 4.5
+          },
+          {
+            "id": 103,
+            "foodImageUrl": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80",
+            "restaurantName": "Minerva",
+            "foodDescription": "indian soup",
+            "foodName": "Tomato soup",
+            "foodCost": 50,
+            "foodRating": 3.5
+          },
+          {
+            "id": 104,
+            "foodImageUrl": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+            "restaurantName": "Sangeeta",
+            "foodDescription": "White pasta",
+            "foodName": "pasta",
+            "foodCost": 30,
+            "foodRating": 4.0
+          },
+          {
+            "id": 105,
+            "foodImageUrl": "https://images.unsplash.com/photo-1598866594230-a7c12756260f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=911&q=80",
+            "restaurantName": "Moksh",
+            "foodDescription": "Fried spicy noodles",
+            "foodName": "noodles",
+            "foodCost": 150,
+            "foodRating": 3.8
+          },
+          {
+            "id": 106,
+            "foodImageUrl": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
+            "restaurantName": "Tourist Plaza",
+            "foodDescription": "Fried Paneer masala ",
+            "foodName": "Paneer tikka",
+            "foodCost": 250,
+            "foodRating": 4.2
+          }
+    ],
+    "User": [
+      {
+        "id": 1,
+        "Name": "Palash",
+        "Email": "palash@gmail.com",
+        "Password": "1203s"
+      },
+      {
+        "title": "",
+        "Name": "tesing",
+        "email": "testing@gmail.com",
+        "password": "1234",
+        "confirmPassword": "1234",
+        "acceptTerms": false,
+        "id": 2
+      },
+      {
+        "title": "",
+        "Name": "",
+        "email": "palashjain2893@gmail.com",
+        "password": "Rjps6Vz2HRVGExL",
+        "confirmPassword": "",
+        "acceptTerms": false,
+        "id": 3
+      }
+    ]
+    
+  }

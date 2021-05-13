@@ -1,6 +1,10 @@
 export interface Register {
-    id:Number,
+    id:string,
     Name:string,
     Email:string,
-    Password:string
+    Password:string,
+    Address:string,
+    city:string,
+    zip:number
+
 }

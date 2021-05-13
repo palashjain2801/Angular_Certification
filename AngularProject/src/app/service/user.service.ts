@@ -17,10 +17,13 @@ export class UserService {
   constructor(private http:HttpClient) { }
   private _url = "http://localhost:3000/User";
   registerUser : Register = {
-    id: 10000,
+    id: ' ',
     Name:'',
     Email:'',
     Password:'',
+    Address:' ',
+    city:' ',
+    zip: 10000
   }
 
   setUserInfo(test:any):Observable<Register>{

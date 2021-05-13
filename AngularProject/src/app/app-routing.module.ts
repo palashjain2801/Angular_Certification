@@ -2,7 +2,8 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { HomeComponent } from './MainScreen/home/home.component';
+import { ListCartComponent } from './Cart/list-cart/list-cart.component';
+import { ListFoodComponent } from './MainScreen/list-food/list-food.component';
 import { OrderDetailsComponent } from './Order/order-details/order-details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent } from './Profile/profile/profile.component';
@@ -17,9 +18,10 @@ const routes: Routes = [
     path:"Login",
     component: LoginComponent
   },
+  
   {
-    path:"Home",
-    component:HomeComponent
+    path:"List",
+    component:ListFoodComponent
   },
   {
     path:"Order",
@@ -38,6 +40,11 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
+    path:"Cart",
+    component: ListCartComponent
+
+  },
+  {
     path:'**',
     component: PageNotFoundComponent
   }
@@ -49,4 +56,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponent = [LoginComponent,OrderDetailsComponent,ProfileComponent,UserSettingComponent, RegisterComponent]
+export const routingComponent = [LoginComponent,OrderDetailsComponent,ProfileComponent,UserSettingComponent, RegisterComponent, ListFoodComponent, ListCartComponent]

@@ -8,7 +8,6 @@ import { RegisterComponent } from './auth/register/register.component';
 import { ForgetPasswordComponent } from './auth/forget-password/forget-password.component';
 import { HeaderLoginComponent } from './auth/header-login/header-login.component';
 import { HeaderMainComponent } from './MainScreen/header-main/header-main.component';
-import { HomeComponent } from './MainScreen/home/home.component';
 import { ListFoodComponent } from './MainScreen/list-food/list-food.component';
 import { UserSettingComponent } from './Setting/user-setting/user-setting.component';
 import { ListCardComponent } from './Setting/list-card/list-card.component';

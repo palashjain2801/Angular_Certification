@@ -1,0 +1,22 @@
+.itemModal {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: auto;
+    display: none;
+    width: auto;
+    z-index: 11;
+    background-color: white;
+}
+
+.blocker {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0.75;
+    z-index: 10;
+}

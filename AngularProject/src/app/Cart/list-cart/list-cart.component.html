@@ -1,1 +1,34 @@
-<p>list-cart works!</p>
+
+<div class="justify-content-center">
+    <div class="card m-8">
+            <h5 class="card-header">Content of cart</h5>
+            <p class="card-header">Total Amount</p>
+
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Sr. No.</th>
+                        <th scope="col">Order</th>
+                        <th scope="col">Cost</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of cartItems">
+                        <td scope="col">{{item.id}}</td>
+                        <td scope="col">{{item.foodName}}</td>
+                        <td scope="col">{{item.foodCost | currency}}</td>
+                      </tr>
+                      <tr>
+                        <td scope="col">Total</td>
+                        <td scope="col"></td>
+                        <td scope="col">{{total | currency}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button type="button" class="btn btn-primary" routerLink="/Order">Place Order</button>
+                  <button type="button" class="btn btn-light" routerLink="/List">Home</button>
+
+            </div>
+    </div>
+</div>
